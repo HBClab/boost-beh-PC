@@ -79,7 +79,6 @@ def plots(submission, output, sub):
         plt.close()
 
     correct_by_block = test.groupby('block_c')['correct'].mean()
-    print(test.head())
 
     print(correct_by_block)
     plot_circular_bar_graph(correct_by_block, 'Correct Rate by Block', output_name='_acc_test')
